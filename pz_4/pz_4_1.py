@@ -2,7 +2,7 @@
 A = input('введите вещественное число: ')
 N = input('введите целое число: ')
 P = 1
-while type(A) != float or type(N) != int:
+while type(A) != float or type(N) != int: #обработка исключений
   try:
     A = float(A)
     N = int(N)
@@ -17,7 +17,7 @@ while type(A) != float or type(N) != int:
     N = input('введите целое число: ')
 
 i = 1
-while i <= N:
+while i <= N: #обработка исключений
     P *= A
     i += 1
     print(A, "в степени", i - 1, "равно", P)
