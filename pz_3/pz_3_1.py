@@ -5,11 +5,11 @@ while type(num) != int: #обработка исключений
   try:
     num = int(num)
     if num > 0:
-        num += 1  # Прибавляем 1, если число положительное
+        num += 1
     elif num < 0:
-      num -= 2  # Вычитаем 2, если число отрицательное
+      num -= 2
     else:
-      num = 10  # Заменяем 0 на 10
+      num = 10
       break
   except ValueError:
     print('Вы ввели не подходящее значение')
