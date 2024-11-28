@@ -16,7 +16,7 @@ print('Введите числа для второго набора')
 A2, B2, C2 = input('введите A: '), input('введите B: '), input('введите C: ')
 
 
-while True:
+while True: #обработка исключений
   try:
     A1, B1, C1 = float(A1), float(B1), float(C1)
     A1, B1, C1 = ShiftLeft3(A1, B1, C1)
