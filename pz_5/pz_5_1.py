@@ -12,9 +12,9 @@ def ramka(word):
   horizontal_line = h_line(word_length + 2)
   vertical_line = '|' + word + '|'
 
-  print(horizontal_line)  # Верхняя линия
-  print(vertical_line)  # Слово с вертикальными линиями
-  print(horizontal_line)  # Нижняя линия
+  print(horizontal_line)  # верхняя линия
+  print(vertical_line)  # слово с вертикальными линиями
+  print(horizontal_line)  # нижняя линия
 
 
 word = input('Введите слово: ')
