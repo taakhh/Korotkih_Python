@@ -5,7 +5,7 @@
 import random
 
 N = input('Введите размер списка: ')
-while True: #обработка исключений
+while True:  # обработка исключений
   try:
     N = int(N)
     N > 0

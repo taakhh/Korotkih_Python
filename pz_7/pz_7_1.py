@@ -3,7 +3,7 @@
 string = input('Введите строку: ')
 count = 0
 
-for i in string:
+for i in string:  # перебираем каждый элемент строки
   if 'A' <= i <= 'Z':
     count += 1
 

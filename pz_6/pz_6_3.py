@@ -3,7 +3,7 @@
 import random
 
 N = input('Введите размер списка: ')
-while True: #обработка исключений
+while True: # обработка исключений
   try:
     N = int(N)
     break
@@ -20,8 +20,9 @@ print('Исходный список:', A)
 
 if N > 0:
   last_el = A[-1]
-  for i in range(N - 1, 0, -1):
-    A[i] = A[i - 1]
-    A[0] = last_el
 
-print('Список после циклического сдвига вправо на одну позицию:', A)
+  for i in range(N - 1, 0, -1):
+      A[i] = A[i - 1]
+  A[0] = last_el
+
+print('Список после циклического сдвига вправо:', A)

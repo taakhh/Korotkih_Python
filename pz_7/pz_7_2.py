@@ -5,7 +5,7 @@ count = 0
 let = 'аеёиоуыэюяАЕЁИОУЫЭЮЯ'
 
 for char in pred: 
-    if char in let:  
-        count += 1  
+    if char in let:  # проверяем, является ли буква гласной
+        count += 1
 
 print('Количество гласных букв в строке:', count)
