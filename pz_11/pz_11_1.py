@@ -27,12 +27,17 @@ for i in k:
 f2 = open('data_2.txt', 'w')
 f2.write('Исходные данные: ')
 f2.write('\n')
-f2.write(' '.join(f"{num}" for num in k) + '\n')
+for num in k:
+    f2.write(f"{num} ")  # Записываем каждое число с пробелом
+f2.write('\n')
 f2.write('Количество элементов:\n')
 f2.write(f"{len(k)}\n")
 f2.write('Индекс первого минимального элемента:\n')
 f2.write(f"{min_ind}\n")
 f2.write('Умножение всех элементов на минимальный элемент:\n')
-f2.write(' '.join(f"{num}" for num in multi_nums) + '\n')
+for num in multi_nums:
+    f2.write(f"{num} ")  # Записываем каждое число с пробелом
+f2.write('\n')
 f2.close()
+
 
