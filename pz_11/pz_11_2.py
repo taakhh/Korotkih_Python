@@ -17,12 +17,12 @@ print('Количество строк: ', t, end='\n')
 print('Количество пробельных символов: ', d, end='\n')
 
 f1 = open('text18-14.txt', encoding='UTF-8')
-l = f1.readlines()  # Читаем все строки файла
+l = f1.readlines()  
 f1.close()
 
 if len(l) >= 3:  
     third_line = l[2].rstrip('\n') 
-    third_line_codes = []  # Создаем пустой список для хранения числовых кодов
+    third_line_codes = []  
 
     for char in third_line:
         code = ord(char)  # Получаем числовой код символа
@@ -33,5 +33,5 @@ if len(l) >= 3:
 
 # Создаем новый файл с изменённым текстом
 f2 = open('text18-2.txt', 'w', encoding='UTF-8')
-f2.writelines(l)  # Записываем изменённые строки в новый файл
+f2.writelines(l)  
 f2.close()
