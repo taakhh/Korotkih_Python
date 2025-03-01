@@ -36,7 +36,7 @@ f2.write('Индекс первого минимального элемента:
 f2.write(f"{min_ind}\n")
 f2.write('Умножение всех элементов на минимальный элемент:\n')
 for num in multi_nums:
-    f2.write(f"{num} ")  # Записываем каждое число с пробелом
+    f2.write(f"{num} ")
 f2.write('\n')
 f2.close()
 
