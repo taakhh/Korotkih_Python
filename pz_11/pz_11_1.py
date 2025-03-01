@@ -8,7 +8,7 @@
 Умножаем все элементы на минимальный элемент:'''
 listik = ['1 -2 90 -228 22 -15 14 45']
 f1 = open('data_1.txt', 'w')
-f1.writelines(listik)
+f1.writelines(listik)  # Записываем список в файл
 f1.close()
 f1 = open('data_1.txt')
 k = f1.read()

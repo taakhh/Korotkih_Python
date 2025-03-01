@@ -10,7 +10,7 @@ for i in open('text18-14.txt', encoding='UTF-8'):
     print(i, end='')  # Выводим содержимое файла на экран
     t += 1
     for j in i:
-        if j.isspace():  # Проверяем, является ли символ пробельным
+        if j.isspace():  # Проверяем является ли символ пробельным
             d += 1
 
 print(end='\n')
@@ -22,7 +22,7 @@ l = f1.readlines()
 f1.close()
 
 if len(l) >= 3:
-    th_l = l[2].rstrip('\n')  # Убираем перенос строки в конц
+    th_l = l[2].rstrip('\n')  # Убираем перенос строки в конце
     th_l_codes = []
     for char in th_l:
         code = ord(char)
