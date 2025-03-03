@@ -6,7 +6,7 @@ t = 0  # Счётчик строк
 d = 0  # Счётчик пробельных символов
 
 # Открываем файл для чтения и вывода содержимого
-for i in open('text18-14.txt', encoding='UTF-8'):
+for i in open('text18-14.txt', encoding='UTF-16  '):
     print(i, end='')  # Выводим содержимое файла на экран
     t += 1
     for j in i:
@@ -17,12 +17,12 @@ print(end='\n')
 print('Количество строк: ', t, end='\n')
 print('Количество пробельных символов: ', d, end='\n')
 
-f1 = open('text18-14.txt', encoding='UTF-8')
+f1 = open('text18-14.txt', encoding='UTF-16')
 l = f1.readlines()
 f1.close()
 
 if len(l) >= 3:
-    th_l = l[2].rstrip('\n')  # Убираем перенос строки в конце
+    th_l = l[2]  # Оставляем символ переноса строки
     th_l_codes = []
     for char in th_l:
         code = ord(char)
