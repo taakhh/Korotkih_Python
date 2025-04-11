@@ -3,8 +3,5 @@ def num_only(numbers):
     yield from filter(str.isdigit, numbers)
 
 numbers = input('Введите строку: ')
-num = num_only(numbers)
-a = []
-for i in num:
-    a.append(i)
-print(''.join(a))
+digits = ''.join(num_only(numbers))
+print(f'Извлечённые цифры: {digits}')
