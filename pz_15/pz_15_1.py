@@ -10,7 +10,7 @@ with sq.connect('trading_company.db') as con:
   cur = con.cursor()
   cur.execute('DROP TABLE IF EXISTS sale_of_goods')
   cur.execute('''CREATE TABLE sale_of_goods(
-    date_sale date NOT NULL PRIMARY KEY AUTOINCREMENT ,
+    date_sale date NOT NULL PRIMARY KEY,
     product VARCHAR(50) NOT NULL,
     amount INT NOT NULL,
     discount FLOAT,
