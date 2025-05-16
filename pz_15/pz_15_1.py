@@ -10,13 +10,12 @@ with sq.connect('trading_company.db') as con:
   cur = con.cursor()
   cur.execute('DROP TABLE IF EXISTS sale_of_goods')
   cur.execute('''CREATE TABLE sale_of_goods(
-    date_sale date NOT NULL,
+    date_sale date NOT NULL PRIMARY KEY AUTOINCREMENT ,
     product VARCHAR(50) NOT NULL,
     amount INT NOT NULL,
     discount FLOAT,
     branch VARCHAR(50),
-    manager TEXT,
-    PRIMARY KEY (date_sale, product, manager)
+    manager TEXT
   )''')
 
   cur.executemany('INSERT INTO sale_of_goods VALUES(?, ?, ?, ?, ?, ?)', data) # Заполнение таблицы данными из своего файла
