@@ -9,8 +9,6 @@ root.configure(bg="#336699")
 # Группа рамки
 frame = tk.LabelFrame(root, text="Registration Details", fg="white", bg="#336699", font=("Arial", 12))
 frame.place(x=50, y=40, width=600, height=370)
-
-# Шрифты
 label_font = ("Arial", 10) # Шрифт для меток
 entry_width = 30 # Ширина для полей
 
@@ -49,7 +47,7 @@ tk.Label(frame, text="Your Website Or Blog :", bg="#336699", fg="white", font=la
 tk.Entry(frame, width=entry_width).insert(0, "http://")
 tk.Entry(frame, width=entry_width).grid(row=6, column=1, pady=5)
 
-# Кнопка "Step 2"
+# Кнопка step 2
 button_f = tk.Frame(root, bg="#336699")
 button_f.place(x=280, y=430)
 
