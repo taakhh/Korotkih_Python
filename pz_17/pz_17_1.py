@@ -31,7 +31,6 @@ deg_f.grid(row=3, column=1, sticky="w")
 # Переменная для радиокнопок
 degree_var = tk.IntVar(value=0)  # начальное значение
 
-# В блоке Degree:
 ttk.Combobox(deg_f, values=["--select--"], width=entry_width-12).grid(row=0, column=0)
 
 tk.Radiobutton(
@@ -44,7 +43,7 @@ tk.Radiobutton(
     bg="#336699", fg="white", selectcolor="#336699"
 ).grid(row=0, column=2)
 
-# Average CPI с двумя Spinbox
+# Average CPI
 tk.Label(frame, text="Average CPI :", bg="#336699", fg="white", font=label_font).grid(row=4, column=0, sticky="e", padx=10, pady=5)
 cpi_f = tk.Frame(frame, bg="#336699")
 cpi_f.grid(row=4, column=1, sticky="w")
