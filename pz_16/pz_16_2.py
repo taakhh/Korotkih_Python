@@ -25,3 +25,8 @@ class Circle(Shape):
         print(f"Radius: {self.radius}")
         print(f"Area: {self.area():.2f}")
         print(f"Perimeter: {self.perimeter():.2f}")
+
+# Создаем экземпляр класса Circle
+circle = Circle(color="Red", radius=5)
+
+circle.display_info()
